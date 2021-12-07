@@ -1,6 +1,8 @@
 .cart {
-  max-width: 30rem;
+  max-width: 35rem;
   background-color: #313131;
+  /* background: linear-gradient(45deg, #0e2a2a, #264e49); */
+  background: linear-gradient(60deg, #313131, #313131 35%, #25b9a8e3);
   color: white;
 }
 
