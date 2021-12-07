@@ -7,12 +7,17 @@
   padding: 0.5rem 10%;
   align-items: center;
   color: white;
+  gap: 2rem;
 }
 
 .notification h2,
 .notification p {
   font-size: 1rem;
   margin: 0;
+}
+
+.notification p {
+  text-align: right;
 }
 
 .error {

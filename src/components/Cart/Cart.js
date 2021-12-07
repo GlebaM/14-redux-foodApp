@@ -7,6 +7,10 @@ import CartItem from "./CartItem";
 const Cart = (props) => {
   const cartItems = useSelector((state) => state.cart.items);
 
+  const fullCartPrice = cartItems.reduce((acc, item) => {
+    return acc + item.totalPrice;
+  }, 0);
+
   return (
     <Card className={classes.cart}>
       <h2>Your Shopping Cart</h2>
@@ -24,6 +28,7 @@ const Cart = (props) => {
           />
         ))}
       </ul>
+      <p>Total amount: ${fullCartPrice.toFixed(2)}</p>
     </Card>
   );
 };

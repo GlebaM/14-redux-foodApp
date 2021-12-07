@@ -2,10 +2,18 @@
   background-color: transparent;
   border-color: #1ad1b9;
   color: #1ad1b9;
+  transition: all 0.15s ease;
 }
 
 .button:hover,
 .button:active {
+  background-color: grey;
+  border-color: #1ac5d1;
+  color: white;
+}
+
+.button:hover .badge,
+.button:active .badge {
   color: white;
 }
 
@@ -18,4 +26,5 @@
   border-radius: 30px;
   padding: 0.15rem 1.25rem;
   color: #1d1d1d;
+  transition: all 0.15s ease;
 }

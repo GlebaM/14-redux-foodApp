@@ -19,6 +19,9 @@ const uiSlice = createSlice({
         message: action.payload.message,
       };
     },
+    hideNotification(state, action) {
+      state.notification = null;
+    },
   },
 });
 
